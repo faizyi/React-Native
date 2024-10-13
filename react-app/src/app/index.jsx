@@ -1,11 +1,13 @@
-import { View, Text,} from 'react-native'
+import { View, Text,ScrollView} from 'react-native'
 import style from './style'
-import SignupForm from '../components/SignupForm'
+import RNSectionList from '../components/RNSectionList'
 const Index = () => {
   return (
     <View style={style.container}>
-        <Text style={{fontSize: 30}}>Hello React Native</Text>
-        <SignupForm/>
+      <ScrollView>
+        <Text style={{fontSize: 30,}}>Hello React Native</Text>
+        <RNSectionList/>
+        </ScrollView>
     </View>
   )
 }
