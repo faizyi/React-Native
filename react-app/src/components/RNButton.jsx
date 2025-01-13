@@ -1,4 +1,4 @@
-import { View, Text, Button } from 'react-native'
+import { View, Text, Button, TouchableHighlight, TouchableOpacity } from 'react-native'
 import React from 'react'
 
 const RNButton = () => {
@@ -9,9 +9,19 @@ const RNButton = () => {
     }
   return (
     <View>
-      <Text>{data}</Text>
+      {/* <Text>{data}</Text>
       <Button title='Button' onPress={()=>warn("hello react")} color={"black"}></Button>
-      <Button title='Button' onPress={()=>warn("hello faiz")} color={"red"}></Button>
+      <Button title='Button' onPress={()=>warn("hello faiz")} color={"red"}></Button> */}
+      <TouchableHighlight onPress={warn}>
+        <Text>
+          Click
+        </Text>
+      </TouchableHighlight>
+      <TouchableOpacity onPress={warn}>
+        <Text>
+          Click
+        </Text>
+      </TouchableOpacity>
     </View>
   )
 }

@@ -5,7 +5,7 @@ const RNFlatList = () => {
     const data = [
         {id: 1,product: "Apple"},
         {id: 2,product: "Oppo"},
-        {id: 3,product: "Vivo"},
+        {id: 3,product: "Vivo"},  
     ]
   return (
     <SafeAreaView>
